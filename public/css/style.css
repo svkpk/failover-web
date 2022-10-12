@@ -1,0 +1,92 @@
+.navbar-brand {
+  padding: 42px 0;
+}
+
+i {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.c-green {
+  color: #5abe73;
+}
+
+.c-black {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#header-right > a {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+#header-right > a i {
+	font-size: 30px;
+	line-height: 30px;
+  position: relative
+}
+
+#header-right > a.chat-link i:before {
+	font-size: 22px;
+	position: relative;
+  top: -4px
+}
+	
+#header-right > a.chat-link i:after {
+	content: "\e625";
+	font-size: 22px;
+	left: 0;
+	position: absolute;
+  top: 0
+}
+	
+#header-right > a.chat-link:hover i:after { color: #f05a37 }
+
+#header-right .icon-lang-o:before { content: "\e601" }
+#header-right .icon-lang-o:hover:before { content: "\e602" }
+#header-right .icon-lang-o.cs_CZ:before { content: "\e626" }
+#header-right .icon-lang-o.cs_CZ:hover:before { content: "\e627" }
+
+.tooltip .tooltip-inner { 
+  color: #000;
+  padding: 20px 25px !important;
+  font-weight: bold;
+  border-radius: 0px;
+  background: #eee;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #eee;
+}
+
+#main {
+  background: url("../images/Slider_01.png") no-repeat center;
+  background-size: cover;
+}
+
+#main .jumbotron {
+  border-radius: 0px;
+  background: #fff;
+}
+
+@media (min-width: 576px){
+  .jumbotron {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 1.25rem
+  }
+  .lead {
+    font-size: 1rem
+  }
+  .navbar-brand {
+    padding: 21px 0;
+  }
+}
